@@ -5,7 +5,7 @@ DEFAULT_SESSION_STATE = {
 }
 
 def initialze_session():
-    for key,value in DEFAULT_SESSION_STATE:
+    for key,value in DEFAULT_SESSION_STATE.items():
         if key not in st.session_state:
             st.session_state[key] = value
 
