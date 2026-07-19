@@ -5,6 +5,11 @@ from pages import (
     home
 )
 
+from src import session
+
+
+
+session.initialze_session()
 
 home_page = st.Page(home.show, title = "Home", icon="🏠" , url_path = "home" ,default=True)
 upload_page = st.Page(upload.show, title = "Upload Dataset", url_path = "upload", icon="📤")
